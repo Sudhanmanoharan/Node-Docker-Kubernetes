@@ -1,8 +1,8 @@
-FROM node:12.13.1
+FROM node:9
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . /app
-CMD ["npm", "start"]
+CMD ["node", "app.js"]
 
 
